@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">Toggle Theme</button>
+    </nav>
+  </header> I 
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <h1>Welcome to My Website</h1>
+      <p id="greeting"></p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+      <p>Hi! I'm Ryan Wesonga, a passionate website developer.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects Portfolio</h2>
+      <div id="portfolio-filter">
+        <button onclick="filterProjects('web')">Web</button>
+        <button onclick="filterProjects('data')">Data</button>
+        <button onclick="filterProjects('ai')">AI</button>
+      </div>   
+      <div id="projects-list"
+        <!-- Projects will be dynamically populated here -->
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <div id="blog-list">
+        <!-- Blog posts will be dynamically loaded here -->
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ryan Wesonga. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

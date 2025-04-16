@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+section {
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#portfolio-filter button {
+  margin: 5px;
+  padding: 10px;
+}
+
+#projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  flex: 1 1 30%;
+  margin: 10px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Light/Dark Mode */
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode header {
+  background-color: #222;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  #projects-list {
+    flex-direction: column;
+  }
+}
